@@ -56,5 +56,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v3.0.0
       with:
-        file: workspace/vendor_hardware_overlay/build/${{github.event.input.PACKAGE_NAME }}
+        path: workspace/vendor_hardware_overlay/build/*.apk
         name: ${{ github.event.inputs.PACKAGE_NAME }}
