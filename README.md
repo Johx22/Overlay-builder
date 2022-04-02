@@ -1,5 +1,5 @@
 # Overlay-builder
-Build device specific overlays for Phh based GSI's 
+Using Github Actions to build device specific overlays for Phh based GSI's 
 
 ## How to use
 1. Fork [vendor_hardware_overlay](https://github.com/phhusson/vendor_hardware_overlay) and make the necessary changes.
