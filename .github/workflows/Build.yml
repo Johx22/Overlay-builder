@@ -7,10 +7,6 @@ on:
         description: 'FORKED_URL'
         required: true
         default: 'https://github.com/phhusson/vendor_hardware_overlay'
-      PACKAGE_NAME:
-        description: 'PACKAGE NAME from Android.mk file. Keep .apk at the end'
-        required: true
-        default: 'treble-overlay-manufacturer-device.apk'
 
 jobs:
   build:
@@ -57,4 +53,4 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
         path: workspace/vendor_hardware_overlay/build/*.apk
-        name: ${{ github.event.inputs.PACKAGE_NAME }}
+        name: OverlayZip
