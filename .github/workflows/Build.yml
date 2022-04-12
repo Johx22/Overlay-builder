@@ -22,11 +22,6 @@ jobs:
         sudo apt -y install git-core git xmlstarlet
         sudo apt update
 
-    - name: Set variables
-      run: |
-        echo "::set-output name=date::$(date +%F)"
-      id: var
-
     - name: Clone vendor_hardware_overlay
       run: |
         PATH=~/bin:$PATH
