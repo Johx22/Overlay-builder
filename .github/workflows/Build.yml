@@ -6,7 +6,7 @@ on:
       FORK_URL:
         description: 'FORKED_URL'
         required: true
-        default: 'https://github.com/phhusson/vendor_hardware_overlay'
+        default: 'https://github.com/phhusson/vendor_hardware_overlay/tree/pie/Samsung/A51-SystemUI'
 
 jobs:
   build:
